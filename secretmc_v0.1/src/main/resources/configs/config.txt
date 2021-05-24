@@ -1,0 +1,130 @@
+// ########################################### //
+// ### RVAS-CORE MASTER CONFIGURATION FILE ### //
+// ########################################### //
+
+// Internal use only. Do not change or you'll break the entire thing.
+config.version = 22
+
+// ------------------ //
+// --- IMPORTANT  --- //
+// ------------------ //
+
+// - !! UUID for the full-access owner's account !! - \\
+adminid = my-account-user-id-w/the-dashes
+
+// - !! IGN for the full-access owner's account !! - \\
+admin = myAccountInGameName
+
+// - The tps under which the auto-restart timer ticks
+restart.threshold = 7.10
+
+// ------------------ //
+// --- DEBUGGING  --- //
+// ------------------ //
+
+// - Console output
+// may globally broadcast some info in chat
+
+debug = false
+verbose = false
+
+// - Track useful and interesting plugin analytics
+analytics.enabled = false
+
+// ----------------- //
+// --- GAME MODE --- //
+// ----------------- //
+
+// - Check for and enforce survival mode when non-op players place blocks
+protect.gamemode.onplace = false
+
+// - Check for and enforce survival mode when non-op players break blocks
+protect.gamemode.onbreak = false
+
+// -------------- //
+// --- VOTING --- //
+// -------------- //
+
+// - Enable vote reward (duplicate item stack in player's main hand)
+vote.enable = false
+
+// - Enable or disable manual execution of vote reward
+vote.debug = false
+
+// - Vote reward multiplier. default = 1
+vote.multiplier = 1
+
+// - Vote reward also heals player to max health. false = disabled || true = enabled [default]
+vote.heal = false
+
+// -------------- //
+// --- MUTING --- //
+// -------------- //
+
+// - Enable vote muting. false = disabled || true = enabled [default]
+mute.enabled = true
+
+// - Percent of population that needs to vote before a mute is ordered. Default: 40
+mute.pop = 51
+
+// - Enable voting by already-muted persons. false = disabled || true = enabled [default]
+mute.hypocrisy = true
+
+// ------------------- //
+// --- PERFORMANCE --- //
+// ------------------- //
+
+// - Global wither limit. default = 710
+wither.limit = 710
+
+// - How many ticks old a wither skull needs to be to get removed *when removal triggers*
+wither.skull.max_ticks = 710
+
+// --- SPEED LIMIT --- \\
+
+// - Global speed limit when TPS is between 17 and 20. default = 76
+speedlimit.tier_one = 76
+
+// - Global speed limit when TPS is between 14 and 17. default = 48
+speedlimit.tier_two = 48
+
+// - Global speed limit when TPS is between 10 and 14. default = 32
+speedlimit.tier_three = 32
+
+// - Global speed limit when TPS is between 7 and 10. default = 26
+speedlimit.tier_four = 26
+
+// - Global speed limit when TPS is 7 or less. default = 20
+speedlimit.tier_five = 20
+
+// ------------------ //
+// --- AESTHETICS --- //
+// ------------------ //
+
+// - Enable auto-announcer in the in-game chat
+announcer.enabled = false
+
+// - Force the server IP. true/false. default = false
+motd.force = false
+
+// - Server IP to force. string value. default = RVAS
+motd.force.name = RVAS
+
+// - Discord link. string value. default = tbd
+discord.link =
+
+// ------------ //
+// --- MISC --- //
+// ------------ //
+
+// - Enable Discord bot
+discord.bot = false
+
+// - Discord Bot ID for analytics notifications. Default: empty. 
+analytics.bot_id =
+
+// - Force survival mode on relog except OPs false = disabled true = enabled [default]
+misc.survival = false
+
+// - Enable or disable the prank /kit command. false = disabled true = enabled [default]
+funny.kit = false

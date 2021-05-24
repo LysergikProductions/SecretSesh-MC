@@ -1,0 +1,49 @@
+// ########################################## //
+// ### RVAS-CORE SPAWN CONFIGURATION FILE ### //
+// ########################################## //
+
+// - Join Messages
+join.message.firstJoin = "Welcome back!"
+join.message.everyJoin = "Welcome to SecretMC! Use /help for commands available to you."
+
+// - Define a rectangular area for spawn
+spawn.max.X = 420.0
+spawn.max.Z = 420.0
+spawn.min.X = -420.0
+spawn.min.Z = -420.0
+
+// - Define a circular area for spawn (COMING SOON!)
+spawn.radius.X = 420.0
+spawn.radius.Z = 420.0
+
+// - Repair important bedrock on spawn/join
+spawn.repair.roof = false
+spawn.repair.floor = true
+
+// ----------------------- //
+// --- RANDOM SPAWNING --- //
+// ----------------------- //
+
+// - Enable random-spawning
+spawn.random = false
+
+// - Random-spawn on first join
+spawn.random.join = false
+
+// - Use circular Spawn Region? (COMING SOON!)
+spawn.circular = false
+
+// - Prevent players spawning in water
+spawn.prevent.drown = false
+
+// - If spawning in liquids, force shallow-only spawning (max 1 block deep liquids)
+spawn.force.shallow = true
+
+// - Prevent players spawning where they would catch on fire
+spawn.prevent.burn = true
+
+// - Prevent players spawning on cacti, wither roses, and magma blocks
+spawn.prevent.pain = true
+
+// - Prevent players spawning in caves / buildings
+spawn.prevent.inside = true

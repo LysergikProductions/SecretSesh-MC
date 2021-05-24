@@ -1,0 +1,140 @@
+// ################################################# //
+// ### RVAS-CORE RESTRICTIONS CONFIGURATION FILE ### //
+// ################################################# //
+
+// - Only allow owner to use `/give` | true == disabled for regular ops
+protect.ops.give = false
+
+// - Prevent block duplication in creative mode on block placement
+consume.creative.blocks = false
+
+// ------------------- //
+// --- SPEED LIMIT --- //
+// ------------------- //
+
+// - Nether roof specific speed-limit | -1 == disabled
+speedlimit.nether_roof = -1
+
+// - Medium kick speed limit (grace period is 2 seconds)
+speedlimit.medium_kick = 80
+
+// - Hard kick speed limit (insta-kick if exceeded)
+speedlimit.hard_kick = 96
+
+// - Reconnect delay when kicked by exceeding the speed limit, in ms. default = 10000 (10s)
+speedlimit.rc_delay = 2000
+
+// - Reconnect delay when reconnecting normally, in ms. default = 5000 (5s). Set to 0 to disable.
+speedlimit.rc_delay_safe = 2000
+
+// - Disables speed limit warnings and only kicks
+speedlimit.agro = false
+
+// ----------------------- //
+// --- MOVEMENT CHECKS --- //
+// ----------------------- //
+
+// - Instantly kill players above y=127 in the nether
+movement.kill.roof = false
+
+// - Instantly kill players under the bedrock floor
+movement.kill.floor = false
+
+// - Delete Chunk Bans (players are protected either way)
+remove.chunk_bans = false
+
+// ------------------------- //
+// --- PLACEMENT PATCHES --- //
+// ------------------------- //
+
+// - Prevent creative mode players from duplicating items
+protect.lock.creative = false
+
+// - Prevent anyone from placing blocks on the nether roof
+protect.roof.noplacement = false
+
+// - Whether to cancel placement of all blocks that are unobtainable in no-commands survival-mode
+// (true = cancel placements)
+
+protect.banned.place = true
+protect.banned.place.ops = true
+
+// --------------------------- //
+// --- BLOCK BREAK PATCHES --- //
+// --------------------------- //
+
+// - Protect bedrock floor (overworld/nether) / roof (nether)
+//** DOES NOT PREVENT VANILLA BLOCK BREAK EXPLOITS**//
+// You can enable and disable those exploits in the paper.yml config-file on your server ("allow-permanent-block-break-exploits")
+
+protect.bedrock.roof = false
+protect.bedrock.floor = true
+
+// - Repair (/setblock) bedrock floor (overworld/nether) / roof (nether)
+chunk.load.repair_roof = false
+chunk.load.repair_floor = false
+
+// ------------------------- //
+// --- ILLEGAL ITEM META --- //
+// ------------------------- //
+
+// - Skip illegal checks for ops?
+skip.ops = true
+
+// - Check for illegal items? (false will disable most illegal item checks)
+item.illegal = true
+
+// - Remove illegal items from player inventories when they join
+item.illegal.onjoin = true
+
+// - Check every InventoryMoveEvent (can affect performance w/many hoppers)
+item.illegal.inv_check = false
+
+// -------------------------------- //
+// --- WHAT IS AN ILLEGAL ITEM? --- //
+// -------------------------------- //
+
+// - true == is illegal
+item.banned.bedrock = false
+item.banned.portal_frame = false
+
+item.banned.knowledge_book = false
+item.banned.player_heads = false
+item.banned.structure_blocks = false
+item.banned.command_blocks = false
+
+item.banned.stacked = false
+item.rebuild.invalid_enchants = false
+item.rebuild.unbreakable = true
+
+// ------------------------ //
+// --- SOUND CONTROLLER --- //
+// ------------------------ //
+
+// Disable global wither sounds
+global.sound.no_wither = false
+
+// ------------ //
+// --- SPAM --- //
+// ------------ //
+
+// - Enable the anti-spam system
+spam.enable = false
+
+// - Minimum similarity to prevent a message being re-sent. default = 95 (percent)
+spam.min_similarity = 95
+
+// - Time required to wait between messages, in ms. default = 1000 (ms)
+spam.wait_time = 1000
+
+// - Required number of violations to punish. default = 20 (vl)
+spam.minimum_vl = 20
+
+// - Reconnect delay after being kicked for spam. default = 5000 (ms)
+spam.rc_delay = 5000
+
+// - Allow ops to bypass anti-spam. default = true
+spam.ops = true
+
+// - SLOW CHAT wait time in milliseconds
+chat.slow.time = 10000

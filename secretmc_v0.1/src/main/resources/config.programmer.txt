@@ -1,0 +1,33 @@
+// ########################################### //
+// ### RVAS-CORE CONFIG PROGRAMMER FILE ### //
+// ########################################### //
+
+// THE FILE IS NOT AT ALL USED FOR NOW
+
+// ** ENTER THE IGN / UUID OF YOUR OWNER ACCOUNT TO ACCESS ALL OWNER-LEVEL COMMANDS ** \\
+admin.account.name = 
+admin.full.uuid = 
+
+// TYPE \\
+
+// default : default settings
+// custom : when loading the plugin, completely ignore this file; use the file as it is on startup
+// anarchy_freedom : enforce configs that are as lean as possible (only try to prevent game-breaking things)
+// anarchy_performance : enforce configs that somewhat restrict mods that can highly affect performance (might increase performance slightly)
+// anarchy_dictator_lol : enforce configs that restrict all kinds of mods related to gameplay
+
+config.type = default
+
+// SPEED LIMIT OVERRIDE \\
+
+// Prevent this file from overwriting your custom changes to speed limits
+config.use.custom_speeds = true
+
+// - Blue-ice boat speed is 72.6 bps
+// - Soulsand 1x1 water tunnel is up to ~156 bps
+
+// Try to allow vanilla fast-travel methods when they go over the speed limit
+config.try.allow_fast_travel = true
+
+// Enforce appropriate minecraft gamerules?
+config.enforce.gamerules = true
